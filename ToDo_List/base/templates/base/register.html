@@ -8,17 +8,17 @@
 
     <form action="" method="POST">
     {% csrf_token %}
-
-    <label >{{form.username.label}}</label>
+        {{form.as_p}}
+    <!-- <label >{{form.username.label}}</label>
     {{form.username}}
 
     <label >{{form.password1.label}}</label>
     {{form.password1}}
 
     <label >{{form.password1.labe2}}</label>
-    {{form.password2}}
+    {{form.password2}} -->
 
-    <input style="margin-top: 10px;" class="button" type="submit" value = "Regoster">
+    <input style="margin-top: 10px;" class="button" type="submit" value = "Register">
 </form>
 
 <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
